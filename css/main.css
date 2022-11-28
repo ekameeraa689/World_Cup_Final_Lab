@@ -1,229 +1,263 @@
 /* these all apply to the body element -> global rules */
 
 * {
-    border: none;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; 
-  }
-  
-  .hidden { display: none; }
-  
-  html, body { height: 100% }
-  
-  body { 
-  font-family: sans-serif;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+.hidden { display: none; }
+
+html, body { height: 100% }
+
+body { 
+font-family: sans-serif;
+background-color: black;
+color: white;
+
+background-image: url("../images/background.webp");
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+/* main header rules */ 
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: end;
+}
+
+#main-logo { width: 220px; padding: 10px 20px; margin-left: auto; }
+
+/* main rules here */
+#players-nav { margin-left: 30%; max-width: 60%; }
+
+.players { list-style-type: none; }
+
+.players li { 
+  display: inline-block;
+  height: 220px;
+  margin: 10px 8px ;
+
   background-color: black;
+  
+
+  text-align: left;
+
+  cursor: pointer;
+}
+.players :hover {
+  border-radius: 50px;
+  background-color: rgb(51, 134, 216);
+  color: rgb(0, 0, 0);
+  text-align: center;
+ 
+}
+.players li h5 {
   color: white;
-  
-  background-image: url("../images/background.webp");
+  padding: 12px 8px;
+}
+
+.players li a { text-decoration: none; }
+
+.red_bumper {
+  width: 100%;
+  height: 6px;
+  background-color: red;
+}
+
+article { 
+  padding: 20px;
+  margin-left: 30%;
+}
+
+/* select the h3 tag inside the article tag on the page */
+/* a selector followed by a space and then ANOTHER selector gets a reference to the parent element and then the child element or elements inside of it */
+article h3  {
+  font-size: 2.5em;
+  margin-bottom: 14px;
+}
+
+/* select the p tag inside the article tag on the page */
+article p {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+.bg1 {
+  width: 150px;
+  height: 150px;
+  background-image: url('../images/argentina-national.JPEG');
   background-repeat: no-repeat;
-  background-size: contain;
-  }
-  
-  /* main header rules */ 
-  header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: end;
-  }
-  
-  #main-logo { width: 220px; padding: 10px 20px; margin-left: auto; }
-  
-  /* main rules here */
-  #players-nav { margin-left: 30%; max-width: 60%; }
-  
-  .players { list-style-type: none; }
-  
-  .players li { 
-    display: inline-block;
-    height: 220px;
-    margin: 10px 8px;
-  
-    background-color: black;
-  
-    text-align: left;
-  
-    cursor: pointer;
-  }
-  
-  .players li h5 {
-    color: white;
-    padding: 12px 8px;
-  }
-  
-  .players li a { text-decoration: none; }
-  
-  .red_bumper {
-    width: 100%;
-    height: 6px;
-    background-color: red;
-  }
-  
-  article { 
-    padding: 20px;
-    margin-left: 30%;
-  }
-  
-  /* select the h3 tag inside the article tag on the page */
-  /* a selector followed by a space and then ANOTHER selector gets a reference to the parent element and then the child element or elements inside of it */
-  article h3  {
-    font-size: 2.5em;
-    margin-bottom: 14px;
-  }
-  
-  /* select the p tag inside the article tag on the page */
-  article p {
-    font-size: 1.5em;
-    line-height: 1.2;
-  }
-  .bg1 {
-    width: 150px;
-    height: 150px;
-    background-image: url('../images/argentina-national.JPEG');
-    background-repeat: no-repeat;
-    background-size:contain;
+  background-size:contain;
 }
 .bg2 {
-    width: 150px;
-    height: 150px;
-    
-    background-image: url('../images/BRAZIL.JPEG');
-    background-repeat: no-repeat;
-    background-size:contain;
+  width: 150px;
+  height: 150px;
+  
+  background-image: url('../images/BRAZIL.JPEG');
+  background-repeat: no-repeat;
+  background-size:contain;
 }
 .bg3 {
-    width: 150px;
-    height: 150px;
-    
-    background-image: url('../images/FRANCE.JPEG');
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 150px;
+  height: 150px;
+  
+  background-image: url('../images/FRANCE.JPEG');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .bg4 {
-    width: 150px;
-    height: 150px;
-    
-    background-image: url('../images/portugal.logo.JPEG');
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 150px;
+  height: 150px;
+  
+  background-image: url('../images/portugal.logo.JPEG');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-  
 
-  footer {
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .sticky_footer {
-    position: sticky;
-    top: 100%;
-    height: 80px;
-  
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* lightbox rules here */
-  
-  .lightbox { 
-    width: 100vw; 
-  
-    position: absolute;
-    top: 0;
-    left: 0;
-  
-    background-color: rgba(0, 0, 0, 0.85);
-    background-image: url('../images/messi.JPEG');
-    background-repeat: no-repeat;
-  
-    background-size: 60vh; 
-    background-position: 40px top;
-    z-index: 5000;
-  
-    display: none;
-  }
-  
-  .lightbox_close {
-    position: relative;
-    top: 20px;
-    left: 95%;
-  
-    color: white;
-    font-size: 3em;
-  
-    text-decoration: none;
-  
-    font-weight: bolder;
-  }
-  
-  .lightbox_close:hover { opacity: 0.5; color: red; }
-  
-  .lightbox article {
-    width: 55%;
-    margin-left: 40%;
-    padding-top: 50px;
-  }
-  
-  .lb_text, .lb_heading { text-align: left; }
-  
-  .lb_text {
-    line-height: 1.6 !important;
-    margin-left: 0;
-    padding-top: 2em;
-  }
-  
-  /* turn the lightbox on using the :target pseudo selector */
-  .lightbox:target { display: block; }
 
-  .lightbox2 { 
-    width: 100vw; 
-    height: 100vh;
+footer {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.sticky_footer {
+  position: sticky;
+  top: 100%;
+  height: 80px;
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* lightbox rules here */
+
+.lightbox { 
+  width: 100vw; 
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  background-image: url('../images/messi.JPEG');
+  background-repeat: no-repeat;
+
+  background-size: 60vh; 
+  background-position: 40px top;
+  z-index: 5000;
+
+  display: none;
+}
+
+.lightbox_close {
+  position: relative;
+  top: 20px;
+  left: 95%;
+
+  color: white;
+  font-size: 3em;
+
+  text-decoration: none;
+
+  font-weight: bolder;
+}
+
+.lightbox_close:hover { opacity: 0.5; color: red; }
+
+.lightbox article {
+  width: 55%;
+  margin-left: 40%;
+  padding-top: 50px;
+}
+
+.lb_text, .lb_heading { text-align: left; }
+
+.lb_text {
+  line-height: 1.6 !important;
+  margin-left: 0;
+  padding-top: 2em;
+}
+
+/* turn the lightbox on using the :target pseudo selector */
+.lightbox:target { display: block; }
+
+.lightbox2 { 
+  width: 100vw; 
+  height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  background-image: url('../images/NEYMAR.BRAZIL.JPEG');
+  background-repeat: no-repeat;
+
+  background-size: 60vh; 
+  background-position: 40px top;
+  z-index: 5000;
+  display: none;
+}
+
+
+.lightbox2_close {
+  position: relative;
+  top: 20px;
+  left: 95%;
+
+  color: white;
+  font-size: 3em;
+
+  text-decoration: none;
+
+  font-weight: bolder;
+}
+
+.lightbox2_close:hover { opacity: 0.5; color: red; }
+
+.lightbox2 article {
+  width: 55%;
+  margin-left: 40%;
+  padding-top: 50px;
+}
+
+.lb2_text, .lb2_heading { text-align: left; }
+
+.lb2_text {
+  line-height: 1.6 !important;
+  margin-left: 0;
+  padding-top: 2em;
+}
+
+/* turn the lightbox on using the :target pseudo selector */
+.lightbox2:target { display: block; }
+
+span {
+  color: beige;
+  align-items: center;
+}
+
+input[type="checkbox"]:checked + span::after {
+  content: '\2713';
+  width: 0;
+  height: 0;
+  margin-left: 20px;
   
-    position: absolute;
-    top: 0;
-    left: 0;
-  
-    background-color: rgba(0, 0, 0, 0.85);
-    background-image: url('../images/NEYMAR.BRAZIL.JPEG');
-    background-repeat: no-repeat;
-  
-    background-size: 60vh; 
-    background-position: 40px top;
-    z-index: 5000;
-    display: none;
-  }
-  
-  
-  .lightbox2_close {
-    position: relative;
-    top: 20px;
-    left: 95%;
-  
-    color: white;
-    font-size: 3em;
-  
-    text-decoration: none;
-  
-    font-weight: bolder;
-  }
-  
-  .lightbox2_close:hover { opacity: 0.5; color: red; }
-  
-  .lightbox2 article {
-    width: 55%;
-    margin-left: 40%;
-    padding-top: 50px;
-  }
-  
-  .lb2_text, .lb2_heading { text-align: left; }
-  
-  .lb2_text {
-    line-height: 1.6 !important;
-    margin-left: 0;
-    padding-top: 2em;
-  }
-  
-  /* turn the lightbox on using the :target pseudo selector */
-  .lightbox2:target { display: block; }
+  border-radius: 60%;
+  background-color: rgb(149, 231, 149);
+  border: 4px solid #32b532;
+  position: relative;
+  top: 2px;
+  right: 1px;
+  font-size: 1.5em;
+  padding-left: 2px;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -21,7 +21,7 @@
   background-size: contain;
   }
   
-  /* main header rules */
+  /* main header rules */ 
   header {
     position: sticky;
     top: 0;
@@ -32,11 +32,11 @@
   #main-logo { width: 220px; padding: 10px 20px; margin-left: auto; }
   
   /* main rules here */
-  #character-nav { margin-left: 30%; max-width: 60%; }
+  #players-nav { margin-left: 30%; max-width: 60%; }
   
-  .characters { list-style-type: none; }
+  .players { list-style-type: none; }
   
-  .characters li { 
+  .players li { 
     display: inline-block;
     height: 220px;
     margin: 10px 8px;
@@ -48,12 +48,12 @@
     cursor: pointer;
   }
   
-  .characters li h5 {
+  .players li h5 {
     color: white;
     padding: 12px 8px;
   }
   
-  .characters li a { text-decoration: none; }
+  .players li a { text-decoration: none; }
   
   .red_bumper {
     width: 100%;
@@ -78,23 +78,39 @@
     font-size: 1.5em;
     line-height: 1.2;
   }
-  
-  .sprite {
+  .bg1 {
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/argentina-national.JPEG');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.bg2 {
     width: 150px;
     height: 150px;
     
-    background-image: url('../images/marvelSprites.jpg');
-  }
+    background-image: url('../images/BRAZIL.JPEG');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.bg3 {
+    width: 150px;
+    height: 150px;
+    
+    background-image: url('../images/FRANCE.JPEG');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bg4 {
+    width: 150px;
+    height: 150px;
+    
+    background-image: url('../images/portugal.logo.JPEG');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
   
-  #carol { background-position: -150px 0; }
-  #clint { background-position: -300px 0; }
-  #hulk { background-position: -450px 0; }
-  #thor { background-position: -600px 0; }
-  #widow { background-position: -750px 0; }
-  
-  .sprite:hover { background-position-y: -150px !important; }
-  
-  /* footer rules here */
+
   footer {
     color: white;
     padding: 20px 0;
@@ -112,24 +128,22 @@
   /* lightbox rules here */
   
   .lightbox { 
-    width: 100vw; /* vw = viewport width => screen width */
-    height: 100vh; /* vh = viewport height => screen height */
+    width: 100vw; 
   
     position: absolute;
     top: 0;
     left: 0;
   
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url('../images/Cap_LB_Bg.png');
+    background-image: url('../images/messi.JPEG');
     background-repeat: no-repeat;
   
-    background-size: 55vh; /* 55% of the viewport height */
-    background-position: 40px bottom;
+    background-size: 60vh; 
+    background-position: 40px top;
+    z-index: 5000;
   
     display: none;
   }
-  
-  #lightbox2 { background-image: url('../images/Thor_LB_Bg.png'); }
   
   .lightbox_close {
     position: relative;
@@ -162,3 +176,54 @@
   
   /* turn the lightbox on using the :target pseudo selector */
   .lightbox:target { display: block; }
+
+  .lightbox2 { 
+    width: 100vw; 
+    height: 100vh;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url('../images/NEYMAR.BRAZIL.JPEG');
+    background-repeat: no-repeat;
+  
+    background-size: 60vh; 
+    background-position: 40px top;
+    z-index: 5000;
+    display: none;
+  }
+  
+  
+  .lightbox2_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+  
+    color: white;
+    font-size: 3em;
+  
+    text-decoration: none;
+  
+    font-weight: bolder;
+  }
+  
+  .lightbox2_close:hover { opacity: 0.5; color: red; }
+  
+  .lightbox2 article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+  }
+  
+  .lb2_text, .lb2_heading { text-align: left; }
+  
+  .lb2_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+  }
+  
+  /* turn the lightbox on using the :target pseudo selector */
+  .lightbox2:target { display: block; }

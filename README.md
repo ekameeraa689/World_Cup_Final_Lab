@@ -1,11 +1,11 @@
 # World_Cup_Final_Lab
 We are going to work on final lab of football world cup.
 # css-selector
-TODO: This is a list of pending to do things, in progress things and done things, using CSS Cascade, Selection and Pseudo Selectors.
+TODO: This is a list of pending to do things, in progress things and done things, using CSS Cascade, Selection, Pseudo Selectors, after or before checked to update, hover and lightboxes.
 ## Installation
-TODO: Workout in a Gym
+TODO: World Cup Team!
 ## Usage
-TODO: Check and uncheck as you complete the tasks.
+TODO: complete the tasks.
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -13,6 +13,6 @@ TODO: Check and uncheck as you complete the tasks.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## Credits
-credits goes Ekam
+credits goes to Ekampreet Kaur and Om Patel.
 ## License
 TODO: MIT

@@ -11,11 +11,18 @@
   
   html, body { height: 100% }
   
+<<<<<<< Updated upstream
   body { 
   font-family: sans-serif;
   background-color: black;
   color: white;
   
+=======
+body { 
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: cyan;
+  color:rgba(0, 0, 0, 0.85);
+>>>>>>> Stashed changes
   background-image: url("../images/background.webp");
   background-repeat: no-repeat;
   background-size: contain;
@@ -161,4 +168,83 @@
   }
   
   /* turn the lightbox on using the :target pseudo selector */
+<<<<<<< Updated upstream
   .lightbox:target { display: block; }
+=======
+  .lightbox:target { display: block; }
+
+  .lightbox2 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightsalmon;
+    background-image: url('../images/RVP.png');
+    background-repeat: no-repeat;
+    background-size: 55vh; 
+    background-position: 40px bottom;
+    z-index: 5000;
+    display: none;
+}
+
+.lightbox2_close{
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: white;
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.lightbox2_close:hover { opacity: 0.5; color: rebeccapurple;}
+
+.lightbox2 article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb2_text, .lb2_heading { text-align: left; }
+.lb2_heading { color: white;}
+
+.lb2_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+.lightbox2:target { display: block; }
+
+input[type=checkbox] {margin-right: 8px;}
+
+/* ::after rules go here */
+
+/* checked items get a pseudo-class of "checked" -> we can select ONLY the checkboxes that have been checked (selected) and add style(s) to them */
+
+input[type="checkbox"]:checked + span::after {
+    content: '\2713';
+    width: 0;
+    height: 0;
+    border-radius: 20%;
+    background-color: green;
+    border: 4px solid #20b320;
+    position: relative;
+    top: 2px;
+    right: 1px;
+    font-size: 1.5em;
+    animation: fadeIn 0.7s;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+
+.hidden { display: none; }
+
+html, body { height: 100% }
+ 
+>>>>>>> Stashed changes
